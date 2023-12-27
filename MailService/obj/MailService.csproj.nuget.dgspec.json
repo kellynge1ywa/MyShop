@@ -49,9 +49,17 @@
               "target": "Package",
               "version": "[7.17.1, )"
             },
+            "MailKit": {
+              "target": "Package",
+              "version": "[4.3.0, )"
+            },
             "Microsoft.AspNetCore.OpenApi": {
               "target": "Package",
               "version": "[8.0.0-rc.1.23421.29, )"
+            },
+            "MimeKit": {
+              "target": "Package",
+              "version": "[4.3.0, )"
             },
             "Newtonsoft.Json": {
               "target": "Package",

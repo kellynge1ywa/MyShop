@@ -273,3 +273,4 @@ D:\projects\Dotnet\MyShop\AuthService\bin\Debug\net8.0\Azure.Messaging.ServiceBu
 D:\projects\Dotnet\MyShop\AuthService\bin\Debug\net8.0\Microsoft.Azure.Amqp.dll
 D:\projects\Dotnet\MyShop\AuthService\bin\Debug\net8.0\MyShopMessageBus.dll
 D:\projects\Dotnet\MyShop\AuthService\bin\Debug\net8.0\MyShopMessageBus.pdb
+D:\projects\Dotnet\MyShop\AuthService\obj\Debug\net8.0\AuthService.sourcelink.json

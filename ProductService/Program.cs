@@ -1,3 +1,6 @@
+using Microsoft.EntityFrameworkCore;
+using ProductService;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
@@ -7,6 +10,22 @@ builder.Services.AddSwaggerGen();
 
 //add controller services
 builder.Services.AddControllers();
+
+//Add automapper
+builder.Services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
+
+//
+builder.Services.AddScoped<Iproduct,ProductsService>();
+builder.Services.AddScoped<IproductImage,ProductImageService>();
+
+//Connect to database
+builder.Services.AddDbContext<AppDbContext>(options=>{
+    options.UseSqlServer(builder.Configuration.GetConnectionString("myConnections"));
+});
+//Add swagger extension
+builder.AddSwaggenGenExtension();
+//Custome services - from extensions folder
+builder.AddAuth();
 
 var app = builder.Build();
 
@@ -18,6 +37,7 @@ if (app.Environment.IsDevelopment())
 }
 
 app.UseHttpsRedirection();
+app.UseMigrations();
 app.UseAuthentication();
 app.UseAuthorization();
 
