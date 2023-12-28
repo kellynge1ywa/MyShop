@@ -8,11 +8,13 @@ public class ProductsController:ControllerBase
 {
     private readonly IMapper _IMapper;
     private readonly Iproduct _Iproduct;
+    private readonly IproductImage _IproductImage;
     private readonly ResponseDto _ResponseDto;
-    public ProductsController(IMapper mapper, Iproduct Iproduct)
+    public ProductsController(IMapper mapper, Iproduct Iproduct, IproductImage iproductImage)
     {
         _IMapper=mapper;
         _Iproduct=Iproduct;
+        _IproductImage=iproductImage;
         _ResponseDto=new ResponseDto();
     }
     [HttpGet]
@@ -25,6 +27,7 @@ public class ProductsController:ControllerBase
     [HttpGet("{Id}")]
     public async Task<ActionResult<ResponseDto>> GetOneProduct(Guid Id){
         var oneProduct= await _Iproduct.GetOneProduct(Id);
+        
         if(oneProduct==null){
             _ResponseDto.Error="Product not found";
             return NotFound(_ResponseDto);
@@ -61,12 +64,12 @@ public class ProductsController:ControllerBase
     }
     [HttpDelete("{Id}")]
     public async Task<ActionResult<ResponseDto>> DeleteProduct(Guid Id){
-        var oneProduct= await _Iproduct.GetOneProduct(Id);
-        if(oneProduct==null){
+        var product= await _Iproduct.GetOneProduct(Id);
+        if(product==null){
             _ResponseDto.Error="Product not found";
             return NotFound(_ResponseDto);
         }
-        var deleted= await _Iproduct.DeleteProduct(oneProduct);
+        var deleted= await _Iproduct.DeleteProduct(product);
         _ResponseDto.Result=deleted;
         return Ok(_ResponseDto);
 

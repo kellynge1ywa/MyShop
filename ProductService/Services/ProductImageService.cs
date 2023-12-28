@@ -28,4 +28,10 @@ public class ProductImageService : IproductImage
 
 
     }
+
+    public async Task<List<ProductImages>> GetAllProductImage(Guid Id)
+    {
+        return await _appDbContext.ProductImages.Where(k=>k.ProductId==Id).ToListAsync();
+        
+    }
 }

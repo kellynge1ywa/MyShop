@@ -11,7 +11,7 @@ public class ProductImages
     public string Image {get;set;}="";
     [ForeignKey("ProductId")]
      public Guid ProductId {get;set;}
-    public Product ImageProduct {get;set;}=default!;
+    public Product ? ImageProduct {get;set;}
     
 
 }
