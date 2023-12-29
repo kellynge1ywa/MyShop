@@ -56,6 +56,18 @@ public class CouponsController : ControllerBase
         _ResponseDto.Result = oneCoupon;
         return Ok(_ResponseDto);
     }
+    [HttpGet("code{code}")]
+    public async Task<ActionResult<ResponseDto>> GetCoupon(string code)
+    {
+        var oneCoupon = await _IcouponServices.GetOneCoupon(code);
+        if (oneCoupon == null)
+        {
+            _ResponseDto.Error = "Coupon not found!";
+            return NotFound(_ResponseDto);
+        }
+        _ResponseDto.Result = oneCoupon;
+        return Ok(_ResponseDto);
+    }
     [HttpPut("{Id}")]
     public async Task<ActionResult<ResponseDto>> UpdateCoupon(Guid Id, AddCouponDto UpdatedCoupon){
         var coupon= await _IcouponServices.GetCoupon(Id);

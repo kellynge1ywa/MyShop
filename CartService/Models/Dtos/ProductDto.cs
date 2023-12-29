@@ -1,7 +1,10 @@
-﻿namespace CartService;
+﻿using System.ComponentModel.DataAnnotations;
+
+namespace CartService;
 
 public class ProductDto
-{
+{ 
+    [Key]
      public Guid ProductId {get;set;}
     public string ProductName {get;set;}="";
     public string Description {get;set;}="";

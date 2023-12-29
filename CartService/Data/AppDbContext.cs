@@ -8,5 +8,23 @@ public class AppDbContext:DbContext
     {
         
     }
+    protected override void OnModelCreating(ModelBuilder modelBuilder)
+    {
+         
+
+         modelBuilder.Entity<ProductDto>()
+        .Property(p=>p.Price)
+        .HasColumnType("decimal");
+
+         modelBuilder.Entity<ProductResponseDto>()
+        .Property(p=>p.Price)
+        .HasColumnType("decimal");
+
+        
+        
+        base.OnModelCreating(modelBuilder);
+    }
+    public DbSet<Cart> Carts {get;set;}
+    public DbSet<ProductCart> ProductCarts {get;set;}
 
 }

@@ -52,6 +52,20 @@ public class CouponsService : Icoupon
         }
     }
 
+    public async Task<Coupon> GetOneCoupon(string code)
+    {
+        try{
+            var oneCoupon= await _AppDbContext.Coupons.Where(k=>k.CouponCode==code).FirstOrDefaultAsync();
+            if(oneCoupon==null){
+                return new Coupon();
+            }
+            return oneCoupon;
+        } catch(Exception ex){
+            Console.WriteLine(ex.Message);
+            return new Coupon();
+        }
+    }
+
     public async Task<string> UpdateCoupon()
     {
         try{

@@ -14,6 +14,18 @@ builder.Services.AddControllers();
 //Add automapper
 builder.Services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
 
+//Services for dependency injection
+builder.Services.AddScoped<Icart,CartServices>();
+builder.Services.AddScoped<Iproduct, ProductServices>();
+builder.Services.AddScoped<Icoupon, CouponServices>();
+
+//Configure base url for  product services
+builder.Services.AddHttpClient("Products",k=>k.BaseAddress=new Uri(builder.Configuration.GetValue<string>("ServiceURL:ProductService")));
+//Configure base url for  coupon services
+builder.Services.AddHttpClient("Coupons",k=>k.BaseAddress=new Uri(builder.Configuration.GetValue<string>("ServiceURL:CouponService")));
+//Configure base url for auth service
+builder.Services.AddHttpClient("Users",k=>k.BaseAddress=new Uri(builder.Configuration.GetValue<string>("ServiceURL:AuthService")));
+
 //Connect to database
 builder.Services.AddDbContext<AppDbContext>(options=>{
     options.UseSqlServer(builder.Configuration.GetConnectionString("myConnections"));
