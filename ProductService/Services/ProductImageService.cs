@@ -1,6 +1,7 @@
 ﻿
 
 using Microsoft.EntityFrameworkCore;
+using Models;
 
 namespace ProductService;
 
@@ -13,7 +14,7 @@ public class ProductImageService : IproductImage
     }
     public async Task<string> AddProductImage(Guid Id, ProductImages productImages)
     {
-        var product = await _appDbContext.Products.Where(k=>k.ProductId==Id).FirstOrDefaultAsync();
+        var product = await _appDbContext.Products.Where(k=>k.Id==Id).FirstOrDefaultAsync();
         if (product!=null)
         {
             product.ProductImages.Add(productImages);

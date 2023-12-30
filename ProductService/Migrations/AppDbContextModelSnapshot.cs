@@ -22,9 +22,9 @@ namespace ProductService.Migrations
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder);
 
-            modelBuilder.Entity("ProductService.Product", b =>
+            modelBuilder.Entity("Models.Product", b =>
                 {
-                    b.Property<Guid>("ProductId")
+                    b.Property<Guid>("Id")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("uniqueidentifier");
 
@@ -45,12 +45,12 @@ namespace ProductService.Migrations
                     b.Property<int>("Quantity")
                         .HasColumnType("int");
 
-                    b.HasKey("ProductId");
+                    b.HasKey("Id");
 
                     b.ToTable("Products");
                 });
 
-            modelBuilder.Entity("ProductService.ProductImages", b =>
+            modelBuilder.Entity("Models.ProductImages", b =>
                 {
                     b.Property<Guid>("ImageId")
                         .ValueGeneratedOnAdd()
@@ -70,9 +70,9 @@ namespace ProductService.Migrations
                     b.ToTable("ProductImages");
                 });
 
-            modelBuilder.Entity("ProductService.ProductImages", b =>
+            modelBuilder.Entity("Models.ProductImages", b =>
                 {
-                    b.HasOne("ProductService.Product", "ImageProduct")
+                    b.HasOne("Models.Product", "ImageProduct")
                         .WithMany("ProductImages")
                         .HasForeignKey("ProductId")
                         .OnDelete(DeleteBehavior.Cascade)
@@ -81,7 +81,7 @@ namespace ProductService.Migrations
                     b.Navigation("ImageProduct");
                 });
 
-            modelBuilder.Entity("ProductService.Product", b =>
+            modelBuilder.Entity("Models.Product", b =>
                 {
                     b.Navigation("ProductImages");
                 });

@@ -22,7 +22,7 @@ namespace CouponService.Migrations
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder);
 
-            modelBuilder.Entity("CouponService.Coupon", b =>
+            modelBuilder.Entity("Models.Coupon", b =>
                 {
                     b.Property<Guid>("CouponId")
                         .ValueGeneratedOnAdd()

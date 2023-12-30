@@ -16,7 +16,7 @@ builder.Services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
 
 //Services for dependency injection
 builder.Services.AddScoped<Icart,CartServices>();
-builder.Services.AddScoped<Iproduct, ProductServices>();
+builder.Services.AddScoped<IProduct, ProductServices>();
 builder.Services.AddScoped<Icoupon, CouponServices>();
 
 //Configure base url for  product services

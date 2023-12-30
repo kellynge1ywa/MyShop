@@ -1,5 +1,8 @@
 ﻿using AutoMapper;
+using Azure;
 using Microsoft.AspNetCore.Mvc;
+using Models;
+
 
 namespace ProductService;
 [Route("api/[controller]")]
@@ -21,6 +24,7 @@ public class ProductsController:ControllerBase
     public async Task<ActionResult<ResponseDto>> GetAllProducts(){
         var allProducts= await _Iproduct.GetAllProducts();
         _ResponseDto.Result=allProducts;
+        
         return Ok(_ResponseDto);
 
     }

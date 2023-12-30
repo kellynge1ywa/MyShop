@@ -1,4 +1,6 @@
-﻿namespace CouponService;
+﻿using Models;
+
+namespace CouponService;
 
 public interface Icoupon
 {

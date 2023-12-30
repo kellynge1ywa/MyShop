@@ -1,5 +1,6 @@
 ﻿using AutoMapper;
 using Microsoft.AspNetCore.Mvc;
+using Models;
 
 namespace ProductService;
 [Route("api/[controller]")]

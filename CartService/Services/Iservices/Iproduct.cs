@@ -1,6 +1,6 @@
 ﻿namespace CartService;
 
-public interface Iproduct
+public interface IProduct
 {
     Task<ProductDto> GetOneProduct(Guid productId);
 

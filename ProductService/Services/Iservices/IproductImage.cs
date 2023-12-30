@@ -1,4 +1,6 @@
-﻿namespace ProductService;
+﻿using Models;
+
+namespace ProductService;
 
 public interface IproductImage
 {

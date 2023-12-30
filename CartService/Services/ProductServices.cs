@@ -3,7 +3,7 @@ using Newtonsoft.Json;
 
 namespace CartService;
 
-public class ProductServices : Iproduct
+public class ProductServices : IProduct
 {
     private readonly IHttpClientFactory _httpClientFactory;
     public ProductServices(IHttpClientFactory httpClientFactory)

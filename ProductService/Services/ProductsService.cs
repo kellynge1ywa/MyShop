@@ -1,5 +1,6 @@
 ﻿
 using Microsoft.EntityFrameworkCore;
+using Models;
 
 namespace ProductService;
 
@@ -43,7 +44,7 @@ public class ProductsService : Iproduct
     {
         return await _AppDbContext.Products.Select(K => new ProductImageResponseDto()
         {
-            ProductId = K.ProductId,
+            ProductId = K.Id,
             ProductName = K.ProductName,
             Description = K.Description,
             Price = K.Price,
@@ -66,7 +67,7 @@ public class ProductsService : Iproduct
         {
             var oneProduct = await _AppDbContext.Products.Select(K => new Product()
             {
-                ProductId = K.ProductId,
+                Id = K.Id,
                 ProductName = K.ProductName,
                 Description = K.Description,
                 Price = K.Price,
@@ -81,7 +82,7 @@ public class ProductsService : Iproduct
 
                 }).ToList()
 
-            }).Where(k => k.ProductId == Id).FirstOrDefaultAsync();
+            }).Where(k => k.Id == Id).FirstOrDefaultAsync();
             if (oneProduct == null)
             {
                 return new Product();

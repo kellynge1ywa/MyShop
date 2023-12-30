@@ -8375,11 +8375,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\projects\\Dotnet\\MyShop\\AuthService\\AuthService.csproj",
+      "projectUniqueName": "d:\\projects\\Dotnet\\MyShop\\AuthService\\AuthService.csproj",
       "projectName": "AuthService",
-      "projectPath": "D:\\projects\\Dotnet\\MyShop\\AuthService\\AuthService.csproj",
+      "projectPath": "d:\\projects\\Dotnet\\MyShop\\AuthService\\AuthService.csproj",
       "packagesPath": "C:\\Users\\KELLY\\.nuget\\packages\\",
-      "outputPath": "D:\\projects\\Dotnet\\MyShop\\AuthService\\obj\\",
+      "outputPath": "d:\\projects\\Dotnet\\MyShop\\AuthService\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -8401,8 +8401,8 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "D:\\projects\\Dotnet\\MyShop\\MyShopMessageBus\\MyShopMessageBus.csproj": {
-              "projectPath": "D:\\projects\\Dotnet\\MyShop\\MyShopMessageBus\\MyShopMessageBus.csproj"
+            "d:\\projects\\Dotnet\\MyShop\\MyShopMessageBus\\MyShopMessageBus.csproj": {
+              "projectPath": "d:\\projects\\Dotnet\\MyShop\\MyShopMessageBus\\MyShopMessageBus.csproj"
             }
           }
         }

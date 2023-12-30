@@ -22,9 +22,34 @@ namespace CartService.Migrations
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder);
 
-            modelBuilder.Entity("CartService.Cart", b =>
+            modelBuilder.Entity("CartService.ProductDto", b =>
                 {
-                    b.Property<Guid>("CartId")
+                    b.Property<Guid>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<string>("Description")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<decimal>("Price")
+                        .HasColumnType("decimal");
+
+                    b.Property<string>("ProductName")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<int>("Quantity")
+                        .HasColumnType("int");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("ProductDto");
+                });
+
+            modelBuilder.Entity("Models.Cart", b =>
+                {
+                    b.Property<Guid>("Id")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("uniqueidentifier");
 
@@ -35,15 +60,47 @@ namespace CartService.Migrations
                     b.Property<DateTime>("OrderDate")
                         .HasColumnType("datetime2");
 
+                    b.Property<string>("Status")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
                     b.Property<Guid>("UserId")
                         .HasColumnType("uniqueidentifier");
 
-                    b.HasKey("CartId");
+                    b.HasKey("Id");
 
                     b.ToTable("Carts");
                 });
 
-            modelBuilder.Entity("CartService.ProductCart", b =>
+            modelBuilder.Entity("Models.Product", b =>
+                {
+                    b.Property<Guid>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<DateTime>("DateAdded")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("Description")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<decimal>("Price")
+                        .HasColumnType("decimal(18,2)");
+
+                    b.Property<string>("ProductName")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<int>("Quantity")
+                        .HasColumnType("int");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Product");
+                });
+
+            modelBuilder.Entity("Models.ProductCart", b =>
                 {
                     b.Property<Guid>("Id")
                         .ValueGeneratedOnAdd()
@@ -60,84 +117,69 @@ namespace CartService.Migrations
 
                     b.HasKey("Id");
 
+                    b.HasIndex("CartId");
+
                     b.HasIndex("ProductId");
 
                     b.ToTable("ProductCarts");
                 });
 
-            modelBuilder.Entity("CartService.ProductDto", b =>
+            modelBuilder.Entity("Models.ProductImages", b =>
                 {
-                    b.Property<Guid>("ProductId")
+                    b.Property<Guid>("ImageId")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("uniqueidentifier");
 
-                    b.Property<string>("Description")
+                    b.Property<string>("Image")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<decimal>("Price")
-                        .HasColumnType("decimal");
-
-                    b.Property<string>("ProductName")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<int>("Quantity")
-                        .HasColumnType("int");
-
-                    b.HasKey("ProductId");
-
-                    b.ToTable("ProductDto");
-                });
-
-            modelBuilder.Entity("CartService.ProductResponseDto", b =>
-                {
                     b.Property<Guid>("ProductId")
-                        .ValueGeneratedOnAdd()
                         .HasColumnType("uniqueidentifier");
 
-                    b.Property<Guid?>("CartId")
-                        .HasColumnType("uniqueidentifier");
+                    b.HasKey("ImageId");
 
-                    b.Property<string>("Description")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
+                    b.HasIndex("ProductId");
 
-                    b.Property<decimal>("Price")
-                        .HasColumnType("decimal");
-
-                    b.Property<string>("ProductName")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.HasKey("ProductId");
-
-                    b.HasIndex("CartId");
-
-                    b.ToTable("ProductResponseDto");
+                    b.ToTable("ProductImages");
                 });
 
-            modelBuilder.Entity("CartService.ProductCart", b =>
+            modelBuilder.Entity("Models.ProductCart", b =>
                 {
-                    b.HasOne("CartService.ProductDto", "product")
+                    b.HasOne("Models.Cart", null)
+                        .WithMany("Products")
+                        .HasForeignKey("CartId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("Models.Product", "Product")
                         .WithMany()
                         .HasForeignKey("ProductId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.Navigation("product");
+                    b.Navigation("Product");
                 });
 
-            modelBuilder.Entity("CartService.ProductResponseDto", b =>
+            modelBuilder.Entity("Models.ProductImages", b =>
                 {
-                    b.HasOne("CartService.Cart", null)
-                        .WithMany("Products")
-                        .HasForeignKey("CartId");
+                    b.HasOne("Models.Product", "ImageProduct")
+                        .WithMany("ProductImages")
+                        .HasForeignKey("ProductId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("ImageProduct");
                 });
 
-            modelBuilder.Entity("CartService.Cart", b =>
+            modelBuilder.Entity("Models.Cart", b =>
                 {
                     b.Navigation("Products");
+                });
+
+            modelBuilder.Entity("Models.Product", b =>
+                {
+                    b.Navigation("ProductImages");
                 });
 #pragma warning restore 612, 618
         }

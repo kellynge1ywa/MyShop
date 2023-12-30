@@ -1,4 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore;
+using Models;
+// using ProductService;
 
 namespace CartService;
 
@@ -16,9 +18,16 @@ public class AppDbContext:DbContext
         .Property(p=>p.Price)
         .HasColumnType("decimal");
 
-         modelBuilder.Entity<ProductResponseDto>()
+          modelBuilder.Entity<ProductCart>()
         .Property(p=>p.Price)
         .HasColumnType("decimal");
+
+        //  modelBuilder.Entity<ProductResponseDto>()
+        // .Property(p=>p.Price)
+        // .HasColumnType("decimal");
+        //  modelBuilder.Entity<Product>()
+        // .Property(p=>p.Price)
+        // .HasColumnType("decimal");
 
         
         

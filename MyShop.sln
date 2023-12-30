@@ -15,6 +15,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyShopMessageBus", "MyShopM
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MailService", "MailService\MailService.csproj", "{C123BF29-87DB-4FCD-8292-DD43805FFFCF}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Models", "Models\Models.csproj", "{EBE181EA-BEAB-44FC-ABFC-DFEE12CC6458}"
+EndProject
 Global
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -103,5 +105,17 @@ Global
 		{C123BF29-87DB-4FCD-8292-DD43805FFFCF}.Release|x64.Build.0 = Release|Any CPU
 		{C123BF29-87DB-4FCD-8292-DD43805FFFCF}.Release|x86.ActiveCfg = Release|Any CPU
 		{C123BF29-87DB-4FCD-8292-DD43805FFFCF}.Release|x86.Build.0 = Release|Any CPU
+		{EBE181EA-BEAB-44FC-ABFC-DFEE12CC6458}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EBE181EA-BEAB-44FC-ABFC-DFEE12CC6458}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EBE181EA-BEAB-44FC-ABFC-DFEE12CC6458}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{EBE181EA-BEAB-44FC-ABFC-DFEE12CC6458}.Debug|x64.Build.0 = Debug|Any CPU
+		{EBE181EA-BEAB-44FC-ABFC-DFEE12CC6458}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{EBE181EA-BEAB-44FC-ABFC-DFEE12CC6458}.Debug|x86.Build.0 = Debug|Any CPU
+		{EBE181EA-BEAB-44FC-ABFC-DFEE12CC6458}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EBE181EA-BEAB-44FC-ABFC-DFEE12CC6458}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EBE181EA-BEAB-44FC-ABFC-DFEE12CC6458}.Release|x64.ActiveCfg = Release|Any CPU
+		{EBE181EA-BEAB-44FC-ABFC-DFEE12CC6458}.Release|x64.Build.0 = Release|Any CPU
+		{EBE181EA-BEAB-44FC-ABFC-DFEE12CC6458}.Release|x86.ActiveCfg = Release|Any CPU
+		{EBE181EA-BEAB-44FC-ABFC-DFEE12CC6458}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
