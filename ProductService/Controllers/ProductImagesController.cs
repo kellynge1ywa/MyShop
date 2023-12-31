@@ -1,4 +1,5 @@
 ﻿using AutoMapper;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Models;
 
@@ -20,6 +21,7 @@ public class ProductImagesController:ControllerBase
         
     }
     [HttpPost("{Id}")]
+    [Authorize(Roles="Admin")]
     public async Task<ActionResult<ResponseDto>> AddImages(Guid Id, AddProductImageDto productImage){
         var product= await _Iproduct.GetOneProduct(Id);
         if(product==null){

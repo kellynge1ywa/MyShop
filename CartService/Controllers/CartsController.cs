@@ -25,27 +25,39 @@ public class CartsController : ControllerBase
     [HttpPost]
     public async Task<ActionResult<Cart>> AddToCart(AddCartDto newcart)
     {
-        var UserId = User.Claims.FirstOrDefault(claim => claim.Type == ClaimTypes.NameIdentifier)?.Value;
-        newcart.UserId = new Guid(UserId);
-
-        var product = await _Iproduct.GetOneProduct(newcart.ProductId);
-        Console.WriteLine($"Product name {product.ProductName}");
-        if (string.IsNullOrWhiteSpace(product.Id.ToString()))
+        try
         {
-            _response.Error = "Product not found";
-            return NotFound(_response);    
-        } else{
-         if(product.Quantity > 1){
-                var response = await _Icart.AddtoCart(newcart);
-                _response.Result = response;
-                return Ok(_response);
+            var token=HttpContext.Request.Headers["Authorization"].ToString().Split(" ")[1];
+            var UserId = User.Claims.FirstOrDefault(claim => claim.Type == ClaimTypes.NameIdentifier)?.Value;
+            
+            newcart.UserId = new Guid(UserId);
 
-            }else {
-                _response.Error="Product not available at the moment";
+            var product = await _Iproduct.GetOneProduct(newcart.ProductId, token);
+            Console.WriteLine($"Product name {product.ProductName}");
+            if (string.IsNullOrWhiteSpace(product.Id.ToString()))
+            {
+                _response.Error = "Product not found";
+                return NotFound(_response);
+            }
+            if(product.Quantity < 1){
+                _response.Error = "Product not available at the moment";
                 return BadRequest(_response);
-            } 
-        }   
+
+            }
         
+            
+             var response = await _Icart.AddtoCart(newcart);
+             _response.Result = response;
+             return Ok(_response);
+           
+
+        } catch(Exception ex){
+            _response.Error=ex.InnerException != null ? ex.InnerException.Message : ex.Message;
+            return StatusCode(500, _response);
+        }
+
+
+
     }
     [HttpGet("AllCarts")]
     public async Task<ActionResult<ResponseDto>> GetAllCarts()
@@ -58,6 +70,13 @@ public class CartsController : ControllerBase
     public async Task<ActionResult<Cart>> GetOneCart(Guid Id)
     {
         var cart = await _Icart.GetOneCart(Id);
+        _response.Result = cart;
+        return Ok(_response);
+    }
+    [HttpGet("UserCart/{UserId}")]
+    public async Task<ActionResult<Cart>> GetCartByUserId(Guid UserId)
+    {
+        var cart = await _Icart.GetCartsByUserId(UserId);
         _response.Result = cart;
         return Ok(_response);
     }
@@ -90,6 +109,23 @@ public class CartsController : ControllerBase
         var item = await _Icart.DeleteCart(Id);
         _response.Result = item;
         return Ok(_response);
+
+    }
+
+    [HttpPut("Coupon/{CartId}")]
+    public async Task<ActionResult<ResponseDto>> ApplyCoupon(Guid CartId, string CouponCode){
+        try{
+            var newCoupon= await _Icart.ApplyCoupon(CartId,CouponCode);
+            _response.Result=newCoupon;
+            return Ok(_response);
+            
+           
+
+        } catch (Exception ex){
+            _response.Error=ex.InnerException != null ? ex.InnerException.Message : ex.Message;
+            return StatusCode(500, _response);
+
+        }
 
     }
 

@@ -1,5 +1,6 @@
 ﻿using AutoMapper;
 using Azure;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Models;
 
@@ -21,6 +22,7 @@ public class ProductsController:ControllerBase
         _ResponseDto=new ResponseDto();
     }
     [HttpGet]
+    [Authorize]
     public async Task<ActionResult<ResponseDto>> GetAllProducts(){
         var allProducts= await _Iproduct.GetAllProducts();
         _ResponseDto.Result=allProducts;
@@ -29,6 +31,7 @@ public class ProductsController:ControllerBase
 
     }
     [HttpGet("{Id}")]
+    [Authorize]
     public async Task<ActionResult<ResponseDto>> GetOneProduct(Guid Id){
         var oneProduct= await _Iproduct.GetOneProduct(Id);
         
@@ -40,6 +43,7 @@ public class ProductsController:ControllerBase
         return Ok(_ResponseDto);
     }
     [HttpPost]
+    [Authorize(Roles="Admin")]
     public async Task<ActionResult<ResponseDto>> AddNewProduct(AddProductDto addProduct){
         try{
             var product=_IMapper.Map<Product>(addProduct);
@@ -54,6 +58,7 @@ public class ProductsController:ControllerBase
         
     }
     [HttpPut("{Id}")]
+    [Authorize(Roles="Admin")]
     public async Task<ActionResult<ResponseDto>> UpdateProduct(Guid Id, AddProductDto updatedProduct){
         var oneProduct= await _Iproduct.GetOneProduct(Id);
         if(oneProduct==null){
@@ -67,6 +72,7 @@ public class ProductsController:ControllerBase
 
     }
     [HttpDelete("{Id}")]
+    [Authorize(Roles="Admin")]
     public async Task<ActionResult<ResponseDto>> DeleteProduct(Guid Id){
         var product= await _Iproduct.GetOneProduct(Id);
         if(product==null){

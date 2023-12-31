@@ -1,4 +1,6 @@
 ﻿
+using System.Net.Http.Headers;
+using Models;
 using Newtonsoft.Json;
 
 namespace CartService;
@@ -10,15 +12,16 @@ public class ProductServices : IProduct
     {
         _httpClientFactory=httpClientFactory;
     }
-    public async Task<ProductDto> GetOneProduct(Guid productId)
+    public async Task<Product> GetOneProduct(Guid productId, string Token)
     {
          var client =_httpClientFactory.CreateClient("Products");
-        var response=await client.GetAsync(productId.ToString());
+         client.DefaultRequestHeaders.Authorization=new AuthenticationHeaderValue("Bearer",Token);
+        var response=await client.GetAsync($"{productId}");
         var content= await response.Content.ReadAsStringAsync();
         var responseDto= JsonConvert.DeserializeObject<ResponseDto>(content);
         if( response.IsSuccessStatusCode){
-            return JsonConvert.DeserializeObject<ProductDto>(Convert.ToString(responseDto.Result));
+            return JsonConvert.DeserializeObject<Product>(Convert.ToString(responseDto.Result));
         }
-        return new ProductDto();
+        return new Product();
     }
 }

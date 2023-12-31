@@ -22,6 +22,15 @@ public class AppDbContext:DbContext
         .Property(p=>p.Price)
         .HasColumnType("decimal");
 
+         modelBuilder.Entity<ProductCart>()
+        .Property(p=>p.Discount)
+        .HasColumnType("decimal");
+
+           modelBuilder.Entity<ProductCart>()
+        .Property(p=>p.Subtotal)
+        .HasColumnType("decimal");
+
+
         //  modelBuilder.Entity<ProductResponseDto>()
         // .Property(p=>p.Price)
         // .HasColumnType("decimal");

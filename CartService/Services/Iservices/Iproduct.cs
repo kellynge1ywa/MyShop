@@ -1,7 +1,9 @@
-﻿namespace CartService;
+﻿using Models;
+
+namespace CartService;
 
 public interface IProduct
 {
-    Task<ProductDto> GetOneProduct(Guid productId);
+    Task<Product> GetOneProduct(Guid productId, string Token);
 
 }

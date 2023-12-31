@@ -8,16 +8,23 @@ namespace CartService;
 public class CartServices : Icart
 {
     private readonly AppDbContext _dbcontext;
+   
+    private readonly Icoupon _Icoupon;
 
-    public CartServices(AppDbContext dbContext)
+    public CartServices(AppDbContext dbContext, Icoupon icoupon)
     {
         _dbcontext = dbContext;
+        _Icoupon=icoupon;
 
 
     }
 
     public async Task<Cart> AddtoCart(AddCartDto newCart)
     {
+        
+        // var product= await  _IProduct.GetOneProduct(newCart.ProductId);
+        // var coupon= await _Icoupon.GetCouponByCode(couponCode);
+
         var cart = await _dbcontext.Carts.Where(k => k.UserId == newCart.UserId && k.Status == "Pending").FirstOrDefaultAsync();
         if (cart == null)
         {
@@ -30,7 +37,7 @@ public class CartServices : Icart
             _dbcontext.Carts.Add(cart);
             await _dbcontext.SaveChangesAsync();
         }
-        var existingProduct = await _dbcontext.ProductCarts.Where(p => p.ProductId == newCart.ProductId && cart.Id == p.CartId).FirstOrDefaultAsync();
+         var existingProduct = await _dbcontext.ProductCarts.Where(p => p.ProductId == newCart.ProductId && cart.Id == p.CartId).FirstOrDefaultAsync();
         if (existingProduct == null)
         {
             existingProduct = new ProductCart
@@ -39,6 +46,8 @@ public class CartServices : Icart
                 CartId = cart.Id,
                 ProductId = newCart.ProductId,
                 Quantity = newCart.Quantity,
+                Price=newCart.Price,
+                Subtotal= newCart.Quantity * newCart.Price
                 
                 
                 
@@ -54,10 +63,30 @@ public class CartServices : Icart
         return cart;
 
 
-
         //  _dbcontext.Carts.Add(newCart)
         // await _dbcontext.SaveChangesAsync();
         // return Cart;
+    }
+
+    public async Task<string> ApplyCoupon(Guid CartId, string CouponCode)
+    {
+        var cart= await _dbcontext.ProductCarts.Where(c=>c.Id==CartId).FirstOrDefaultAsync();
+        if(cart==null){
+            return "Cart not found";
+        }
+        var coupon=await _Icoupon.GetCouponByCode(CouponCode);
+        if(coupon==null){
+            return "Coupon not found";
+        }
+        if(coupon.CouponMinAmount <= cart.Subtotal){
+            cart.CouponCode=coupon.CouponCode;
+            cart.Discount=coupon.CouponAmount;
+            await _dbcontext.SaveChangesAsync();
+            return "Coupon applied";
+        } else{
+            return "You have not attained minimum amount to qualify for coupon";
+        }
+        
     }
 
     public async Task<string> DecreaseQuantity(Guid ProductId, int Quantity)
@@ -104,6 +133,17 @@ public class CartServices : Icart
         return await _dbcontext.Carts.Include(k => k.Products).ToListAsync();
     }
 
+    public async Task<ProductCart> GetCart(Guid CartId)
+    {
+         var oneCart= await _dbcontext.ProductCarts.Where(c=>c.Id==CartId).FirstOrDefaultAsync();
+        if(oneCart == null){
+            return new ProductCart();
+        }else{
+            return oneCart;
+        }
+        
+    }
+
     public async Task<Cart> GetCartsByUserId(Guid UserId)
     {
         return await _dbcontext.Carts.Include(k => k.Products).FirstOrDefaultAsync(c => c.UserId == UserId);
@@ -111,7 +151,7 @@ public class CartServices : Icart
 
     public async Task<Cart> GetOneCart(Guid CartId)
     {
-        var oneCart= await _dbcontext.Carts.Where(c=>c.Id==CartId).FirstOrDefaultAsync();
+        var oneCart= await _dbcontext.Carts.Include(k=>k.Products).Where(c=>c.Id==CartId).FirstOrDefaultAsync();
         if(oneCart == null){
             return new Cart();
         }else{
@@ -161,6 +201,11 @@ public class CartServices : Icart
             return ex.Message;
         }
 
+    }
+
+    public async Task saveChanges()
+    {
+        await _dbcontext.SaveChangesAsync();
     }
 }
 

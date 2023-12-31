@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "d:\\projects\\Dotnet\\MyShop\\CartService\\CartService.csproj": {}
+    "D:\\projects\\Dotnet\\MyShop\\CartService\\CartService.csproj": {}
   },
   "projects": {
-    "d:\\projects\\Dotnet\\MyShop\\CartService\\CartService.csproj": {
+    "D:\\projects\\Dotnet\\MyShop\\CartService\\CartService.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "d:\\projects\\Dotnet\\MyShop\\CartService\\CartService.csproj",
+        "projectUniqueName": "D:\\projects\\Dotnet\\MyShop\\CartService\\CartService.csproj",
         "projectName": "CartService",
-        "projectPath": "d:\\projects\\Dotnet\\MyShop\\CartService\\CartService.csproj",
+        "projectPath": "D:\\projects\\Dotnet\\MyShop\\CartService\\CartService.csproj",
         "packagesPath": "C:\\Users\\KELLY\\.nuget\\packages\\",
-        "outputPath": "d:\\projects\\Dotnet\\MyShop\\CartService\\obj\\",
+        "outputPath": "D:\\projects\\Dotnet\\MyShop\\CartService\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -33,8 +33,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "d:\\projects\\Dotnet\\MyShop\\Models\\Models.csproj": {
-                "projectPath": "d:\\projects\\Dotnet\\MyShop\\Models\\Models.csproj"
+              "D:\\projects\\Dotnet\\MyShop\\Models\\Models.csproj": {
+                "projectPath": "D:\\projects\\Dotnet\\MyShop\\Models\\Models.csproj"
               }
             }
           }
@@ -121,14 +121,14 @@
         }
       }
     },
-    "d:\\projects\\Dotnet\\MyShop\\Models\\Models.csproj": {
+    "D:\\projects\\Dotnet\\MyShop\\Models\\Models.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "d:\\projects\\Dotnet\\MyShop\\Models\\Models.csproj",
+        "projectUniqueName": "D:\\projects\\Dotnet\\MyShop\\Models\\Models.csproj",
         "projectName": "Models",
-        "projectPath": "d:\\projects\\Dotnet\\MyShop\\Models\\Models.csproj",
+        "projectPath": "D:\\projects\\Dotnet\\MyShop\\Models\\Models.csproj",
         "packagesPath": "C:\\Users\\KELLY\\.nuget\\packages\\",
-        "outputPath": "d:\\projects\\Dotnet\\MyShop\\Models\\obj\\",
+        "outputPath": "D:\\projects\\Dotnet\\MyShop\\Models\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "9BLKj41Y0w0AuBoSg1e1o/vcAHB0wyLcbQ6qbFZ2/CFLXYus9wEoWUaeSsFg22/8osjqN3/Ihq3xoBgzBrHb6w==",
+  "dgSpecHash": "IqEzXQ7ddIH2eghprfmtIfxcX7Ff7xSupvI24hYaf8ac+KTWHYk/OryxTzW/xQyQ4jXgJeyPdZx4AFlwfTxx2A==",
   "success": true,
-  "projectFilePath": "d:\\projects\\Dotnet\\MyShop\\AuthService\\AuthService.csproj",
+  "projectFilePath": "D:\\projects\\Dotnet\\MyShop\\AuthService\\AuthService.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\KELLY\\.nuget\\packages\\automapper\\12.0.1\\automapper.12.0.1.nupkg.sha512",
     "C:\\Users\\KELLY\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\12.0.1\\automapper.extensions.microsoft.dependencyinjection.12.0.1.nupkg.sha512",

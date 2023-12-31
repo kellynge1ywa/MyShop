@@ -1,10 +1,11 @@
 ﻿using AutoMapper;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Models;
 
 namespace CouponService;
 [Route("api/[controller]")]
-[ApiController]
+[ApiController, Authorize]
 public class CouponsController : ControllerBase
 {
     private readonly IMapper _IMapper;

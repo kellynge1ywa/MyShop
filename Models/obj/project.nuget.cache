@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "scCIS4J8gKRzQZ+rDohPKbX8djJ9N5W8YKGwkAbAxC+xcY9+e/7q3IxIOc+0G5SjUlLP/ImTfBmV0yLW3kZJzQ==",
+  "dgSpecHash": "b/jU6S0QethO+ijCKLP8+aOgjskeZBrFTUnZjSpUOUDsDgSnVd4m8bVW4C/BUFwlLQvZRBCyLrZjdXx4WhaX6Q==",
   "success": true,
-  "projectFilePath": "d:\\projects\\Dotnet\\MyShop\\Models\\Models.csproj",
+  "projectFilePath": "D:\\projects\\Dotnet\\MyShop\\Models\\Models.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

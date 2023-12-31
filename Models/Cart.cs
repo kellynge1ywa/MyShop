@@ -11,7 +11,6 @@ namespace Models
     [ForeignKey("UserId")]
     public Guid UserId {get;set;}
    
-    public string CouponCode {get;set;}="";
    
     public DateTime OrderDate {get;set;}
     public string Status {get;set;}="Pending";

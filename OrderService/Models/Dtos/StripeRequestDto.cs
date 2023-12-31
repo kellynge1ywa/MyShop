@@ -1,11 +1,11 @@
-namespace OrderService.Models.Dtos
+﻿namespace OrderService;
+
+public class StripeRequestDto
 {
-    public class StripeRequestDto
-    {
-         public string? StripeSessionUrl { get; set; }
+      public string? StripeSessionUrl { get; set; }
         public string? StripeSessionId { get; set; }
         public string ApprovedUrl { get; set; }
         public string CancelUrl { get; set; }
-        public Guid CartId { get; set; }
-    }
+        public Guid OrderId { get; set; }
+
 }
