@@ -2,6 +2,6 @@
 
 public interface Icoupon
 {
-    Task<CouponDto> GetCouponByCode(string CouponCode);
+    Task<CouponDto> GetCouponByCode(string CouponCode, string Token);
 
 }

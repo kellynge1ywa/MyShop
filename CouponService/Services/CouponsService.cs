@@ -56,7 +56,7 @@ public class CouponsService : Icoupon
     public async Task<Coupon> GetOneCoupon(string code)
     {
         try{
-            var oneCoupon= await _AppDbContext.Coupons.Where(k=>k.CouponCode==code).FirstOrDefaultAsync();
+            var oneCoupon= await _AppDbContext.Coupons.Where(k=>k.CouponCode==code.ToLower()).FirstOrDefaultAsync();
             if(oneCoupon==null){
                 return new Coupon();
             }

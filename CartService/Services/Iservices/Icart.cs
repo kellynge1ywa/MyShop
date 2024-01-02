@@ -8,7 +8,7 @@ public interface Icart
     Task<string>RemoveProduct(Guid ProductId);
     Task<string>DeleteCart(Guid Id);
 
-    Task<string> ApplyCoupon(Guid CartId,string CouponCode);
+    // Task<string> ApplyCoupon(Guid CartId,string CouponCode);
 
 
     

@@ -31,6 +31,8 @@ builder.Services.AddDbContext<AppDbContext>(options=>{
     options.UseSqlServer(builder.Configuration.GetConnectionString("myConnections"));
 });
 
+builder.Services.AddHttpContextAccessor();
+
 //Add swagger extension
 builder.AddSwaggenGenExtension();
 
