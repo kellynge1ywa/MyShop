@@ -1,0 +1,13 @@
+D:\projects\Dotnet\MyShop\Backend\MyShopMessageBus\bin\Debug\net8.0\MyShopMessageBus.deps.json
+D:\projects\Dotnet\MyShop\Backend\MyShopMessageBus\bin\Debug\net8.0\MyShopMessageBus.dll
+D:\projects\Dotnet\MyShop\Backend\MyShopMessageBus\bin\Debug\net8.0\MyShopMessageBus.pdb
+D:\projects\Dotnet\MyShop\Backend\MyShopMessageBus\obj\Debug\net8.0\MyShopMessageBus.GeneratedMSBuildEditorConfig.editorconfig
+D:\projects\Dotnet\MyShop\Backend\MyShopMessageBus\obj\Debug\net8.0\MyShopMessageBus.AssemblyInfoInputs.cache
+D:\projects\Dotnet\MyShop\Backend\MyShopMessageBus\obj\Debug\net8.0\MyShopMessageBus.AssemblyInfo.cs
+D:\projects\Dotnet\MyShop\Backend\MyShopMessageBus\obj\Debug\net8.0\MyShopMessageBus.csproj.CoreCompileInputs.cache
+D:\projects\Dotnet\MyShop\Backend\MyShopMessageBus\obj\Debug\net8.0\MyShopMessageBus.sourcelink.json
+D:\projects\Dotnet\MyShop\Backend\MyShopMessageBus\obj\Debug\net8.0\MyShopMessageBus.dll
+D:\projects\Dotnet\MyShop\Backend\MyShopMessageBus\obj\Debug\net8.0\refint\MyShopMessageBus.dll
+D:\projects\Dotnet\MyShop\Backend\MyShopMessageBus\obj\Debug\net8.0\MyShopMessageBus.pdb
+D:\projects\Dotnet\MyShop\Backend\MyShopMessageBus\obj\Debug\net8.0\ref\MyShopMessageBus.dll
+D:\projects\Dotnet\MyShop\Backend\MyShopMessageBus\obj\Debug\net8.0\MyShopMessageBus.csproj.AssemblyReference.cache

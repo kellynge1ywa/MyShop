@@ -136,7 +136,7 @@ public class CartServices : Icart
 
     public async Task<Cart> GetCartsByUserId(Guid UserId)
     {
-         return await _dbcontext.Carts.Include(k => k.Products).FirstOrDefaultAsync(c => c.UserId == UserId);
+         return await _dbcontext.Carts.Where(c=>c.UserId==UserId).Include(k => k.Products).FirstOrDefaultAsync();
          
     }
 

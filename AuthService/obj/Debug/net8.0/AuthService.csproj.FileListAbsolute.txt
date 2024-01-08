@@ -36,16 +36,7 @@ D:\projects\Dotnet\MyShop\AuthService\bin\Debug\net8.0\Microsoft.EntityFramework
 D:\projects\Dotnet\MyShop\AuthService\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Design.dll
 D:\projects\Dotnet\MyShop\AuthService\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Relational.dll
 D:\projects\Dotnet\MyShop\AuthService\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.SqlServer.dll
-D:\projects\Dotnet\MyShop\AuthService\bin\Debug\net8.0\Microsoft.Extensions.Caching.Abstractions.dll
-D:\projects\Dotnet\MyShop\AuthService\bin\Debug\net8.0\Microsoft.Extensions.Caching.Memory.dll
-D:\projects\Dotnet\MyShop\AuthService\bin\Debug\net8.0\Microsoft.Extensions.Configuration.Abstractions.dll
-D:\projects\Dotnet\MyShop\AuthService\bin\Debug\net8.0\Microsoft.Extensions.DependencyInjection.dll
-D:\projects\Dotnet\MyShop\AuthService\bin\Debug\net8.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
 D:\projects\Dotnet\MyShop\AuthService\bin\Debug\net8.0\Microsoft.Extensions.DependencyModel.dll
-D:\projects\Dotnet\MyShop\AuthService\bin\Debug\net8.0\Microsoft.Extensions.Logging.dll
-D:\projects\Dotnet\MyShop\AuthService\bin\Debug\net8.0\Microsoft.Extensions.Logging.Abstractions.dll
-D:\projects\Dotnet\MyShop\AuthService\bin\Debug\net8.0\Microsoft.Extensions.Options.dll
-D:\projects\Dotnet\MyShop\AuthService\bin\Debug\net8.0\Microsoft.Extensions.Primitives.dll
 D:\projects\Dotnet\MyShop\AuthService\bin\Debug\net8.0\Microsoft.Identity.Client.dll
 D:\projects\Dotnet\MyShop\AuthService\bin\Debug\net8.0\Microsoft.Identity.Client.Extensions.Msal.dll
 D:\projects\Dotnet\MyShop\AuthService\bin\Debug\net8.0\Microsoft.IdentityModel.Abstractions.dll
@@ -93,8 +84,6 @@ D:\projects\Dotnet\MyShop\AuthService\bin\Debug\net8.0\System.Reflection.Metadat
 D:\projects\Dotnet\MyShop\AuthService\bin\Debug\net8.0\System.Runtime.Caching.dll
 D:\projects\Dotnet\MyShop\AuthService\bin\Debug\net8.0\System.Security.Cryptography.ProtectedData.dll
 D:\projects\Dotnet\MyShop\AuthService\bin\Debug\net8.0\System.Security.Permissions.dll
-D:\projects\Dotnet\MyShop\AuthService\bin\Debug\net8.0\System.Text.Encodings.Web.dll
-D:\projects\Dotnet\MyShop\AuthService\bin\Debug\net8.0\System.Text.Json.dll
 D:\projects\Dotnet\MyShop\AuthService\bin\Debug\net8.0\System.Windows.Extensions.dll
 D:\projects\Dotnet\MyShop\AuthService\bin\Debug\net8.0\af\Humanizer.resources.dll
 D:\projects\Dotnet\MyShop\AuthService\bin\Debug\net8.0\ar\Humanizer.resources.dll
@@ -245,7 +234,6 @@ D:\projects\Dotnet\MyShop\AuthService\bin\Debug\net8.0\runtimes\win\lib\net7.0\M
 D:\projects\Dotnet\MyShop\AuthService\bin\Debug\net8.0\runtimes\win\lib\net7.0\System.Drawing.Common.dll
 D:\projects\Dotnet\MyShop\AuthService\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Runtime.Caching.dll
 D:\projects\Dotnet\MyShop\AuthService\bin\Debug\net8.0\runtimes\win\lib\net7.0\System.Security.Cryptography.ProtectedData.dll
-D:\projects\Dotnet\MyShop\AuthService\bin\Debug\net8.0\runtimes\browser\lib\net8.0\System.Text.Encodings.Web.dll
 D:\projects\Dotnet\MyShop\AuthService\bin\Debug\net8.0\runtimes\win\lib\net7.0\System.Windows.Extensions.dll
 D:\projects\Dotnet\MyShop\AuthService\obj\Debug\net8.0\AuthService.csproj.AssemblyReference.cache
 D:\projects\Dotnet\MyShop\AuthService\obj\Debug\net8.0\AuthService.GeneratedMSBuildEditorConfig.editorconfig

@@ -6,8 +6,8 @@ namespace ProductService;
 
 public class ProductsService : Iproduct
 {
-    private readonly AppDbContext _AppDbContext;
-    public ProductsService(AppDbContext appDbContext)
+    private readonly ShopDbContext _AppDbContext;
+    public ProductsService(ShopDbContext appDbContext)
     {
         _AppDbContext = appDbContext;
     }
