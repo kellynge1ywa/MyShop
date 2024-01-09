@@ -13,27 +13,27 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = browser
 build_property.RootNamespace = Dukani
 build_property.RootNamespace = Dukani
-build_property.ProjectDir = d:\projects\Dotnet\MyShop\Frontend\Dukani\
+build_property.ProjectDir = D:\projects\Dotnet\MyShop\Frontend\Dukani\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.RazorLangVersion = 7.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = d:\projects\Dotnet\MyShop\Frontend\Dukani
+build_property.MSBuildProjectDirectory = D:\projects\Dotnet\MyShop\Frontend\Dukani
 build_property._RazorSourceGeneratorDebug = 
 
-[d:/projects/Dotnet/MyShop/Frontend/Dukani/App.razor]
+[D:/projects/Dotnet/MyShop/Frontend/Dukani/App.razor]
 build_metadata.AdditionalFiles.TargetPath = QXBwLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[d:/projects/Dotnet/MyShop/Frontend/Dukani/MainLayout.razor]
+[D:/projects/Dotnet/MyShop/Frontend/Dukani/MainLayout.razor]
 build_metadata.AdditionalFiles.TargetPath = TWFpbkxheW91dC5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[d:/projects/Dotnet/MyShop/Frontend/Dukani/Pages/Index.razor]
+[D:/projects/Dotnet/MyShop/Frontend/Dukani/Pages/Index.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW5kZXgucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[d:/projects/Dotnet/MyShop/Frontend/Dukani/_Imports.razor]
+[D:/projects/Dotnet/MyShop/Frontend/Dukani/_Imports.razor]
 build_metadata.AdditionalFiles.TargetPath = X0ltcG9ydHMucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
