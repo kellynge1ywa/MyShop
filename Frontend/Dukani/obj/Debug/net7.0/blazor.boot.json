@@ -1,7 +1,7 @@
 {
   "entryAssembly": "Dukani",
   "resources": {
-    "hash": "sha256-JXz+vBKQlKUDvx0S6rQ2fxSsz9q2TE+KvqNUwEbyork=",
+    "hash": "sha256-Id9tl0ykT7eSuNeHCT+xAPmULP3qYiTSAB1MUT25UjM=",
     "runtime": {
       "dotnet.7.0.14.cc25u4weux.js": "sha256-YWGUknGRzP/fgO6YjvCJKPVQNZAPEd6ll+rHfQEIW+I=",
       "dotnet.timezones.blat": "sha256-t5xviiOQTfAsF0UDhmcyalKiaehUmf/sqJl97tmPM0M=",
@@ -202,10 +202,10 @@
       "mscorlib.dll": "sha256-YcsJInaT/kw3Vrm+SESegPxvT/Lr9RE6rE/KnxWIIc0=",
       "netstandard.dll": "sha256-TztlSRjADgiEABbiAMdWZpHrUVd8wnRtQRAvlwmRP/4=",
       "System.Private.CoreLib.dll": "sha256-BAhrZ8Zg3cJKQipxdzqQo+9jtPkOkRx1ou3oIhDohtk=",
-      "Dukani.dll": "sha256-y0i7PubtaJ49za61XKjsnQ3NMzH+/L1GSnws8ifeX1s="
+      "Dukani.dll": "sha256-cpbUAahUa4lD8jMlsRlNmDwMKUEZgIgSD8lSedlvY3o="
     },
     "pdb": {
-      "Dukani.pdb": "sha256-XSeQNVa7L42Z0DXzYQ/wCrvJoj1jlxyoQS6MfI2LfIU="
+      "Dukani.pdb": "sha256-GxKCbBo5i1oIFGGMjwab0gNx/x5tw7R2tm4HkmkGN0I="
     },
     "runtimeAssets": {
       "dotnet.wasm": {

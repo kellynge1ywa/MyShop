@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "cq7AMML3INJ5ti1AK9ze2Fp4HZPT87GXhbTgCztNPpU=",
+  "Hash": "dEC290Z7eZ8XbNjZ+dZUvm7m7U4sIsR2mHlcJvPHjRI=",
   "Source": "Dukani",
   "BasePath": "/",
   "Mode": "Root",
@@ -7674,6 +7674,25 @@
       "OriginalItemSpec": "wwwroot\\css\\app.css"
     },
     {
+      "Identity": "D:\\projects\\Dotnet\\MyShop\\Frontend\\Dukani\\wwwroot\\css\\style.css",
+      "SourceId": "Dukani",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\projects\\Dotnet\\MyShop\\Frontend\\Dukani\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "css/style.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\style.css"
+    },
+    {
       "Identity": "D:\\projects\\Dotnet\\MyShop\\Frontend\\Dukani\\wwwroot\\index.html",
       "SourceId": "Dukani",
       "SourceType": "Discovered",
@@ -7691,6 +7710,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\index.html"
+    },
+    {
+      "Identity": "D:\\projects\\Dotnet\\MyShop\\Frontend\\Dukani\\wwwroot\\SampleData\\Products.json",
+      "SourceId": "Dukani",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\projects\\Dotnet\\MyShop\\Frontend\\Dukani\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "SampleData/Products.json",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\SampleData\\Products.json"
     }
   ]
 }

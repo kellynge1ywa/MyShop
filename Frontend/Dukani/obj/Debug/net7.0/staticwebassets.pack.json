@@ -9,8 +9,16 @@
       "PackagePath": "staticwebassets\\_framework\\blazor.webassembly.js.gz"
     },
     {
+      "Id": "D:\\projects\\Dotnet\\MyShop\\Frontend\\Dukani\\wwwroot\\SampleData\\Products.json",
+      "PackagePath": "staticwebassets\\SampleData\\Products.json"
+    },
+    {
       "Id": "D:\\projects\\Dotnet\\MyShop\\Frontend\\Dukani\\wwwroot\\css\\app.css",
       "PackagePath": "staticwebassets\\css\\app.css"
+    },
+    {
+      "Id": "D:\\projects\\Dotnet\\MyShop\\Frontend\\Dukani\\wwwroot\\css\\style.css",
+      "PackagePath": "staticwebassets\\css\\style.css"
     },
     {
       "Id": "D:\\projects\\Dotnet\\MyShop\\Frontend\\Dukani\\wwwroot\\index.html",

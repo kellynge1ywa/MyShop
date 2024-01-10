@@ -1,5 +1,8 @@
+
+
 h1:focus {
     outline: none;
+    
 }
 
 #blazor-error-ui {
@@ -30,3 +33,4 @@ h1:focus {
     .blazor-error-boundary::after {
         content: "An error has occurred."
     }
+   

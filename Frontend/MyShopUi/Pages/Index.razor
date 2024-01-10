@@ -1,0 +1,18 @@
+﻿@page "/"
+@inject NavigationManager _Navigation
+
+
+<div>
+    <h1>Welcome to our shop</h1>
+    <button @onclick="CreateAccount">Create account</button>
+    @* <UserForm></UserForm> *@
+</div>
+
+@code{
+
+    public void CreateAccount(){
+        _Navigation.NavigateTo("/register");
+
+    }
+
+}

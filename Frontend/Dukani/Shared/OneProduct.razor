@@ -1,0 +1,18 @@
+﻿<div class="container">
+    <div class="product">
+        
+        <img class="image" src="@product.Image">
+        <div>
+            <p>Name: @product.Name</p>
+            <p>Description: @product.Description</p>
+            <p>Price: @product.Price</p>
+            
+        </div>
+    </div>
+</div>
+
+@code {
+    [Parameter]
+    public Product product {get;set;}=default!;
+
+}

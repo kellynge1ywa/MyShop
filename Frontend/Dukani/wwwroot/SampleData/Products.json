@@ -1,0 +1,24 @@
+[
+    {
+      "Id": 1,
+      "Name": "Monitors",
+      "Description": "Best Monitor",
+      "Price": "2000",
+      "Image": "https://cdn.pixabay.com/photo/2014/12/22/19/59/macbook-577758_640.jpg"
+    },
+    {
+      "Id": 2,
+      "Name": "Keyboards",
+      "Description": "Best Keyboards",
+      "Price": "500",
+      "Image": "https://media.istockphoto.com/id/1396231106/photo/gaming-keyboard-with-backlight.jpg?s=1024x1024&w=is&k=20&c=nDv4zp07H7zLvsFkfQjzBbuu6C3B49cKZrXLpkQq0ds="
+    },
+    {
+      "Id": 3,
+      "Name": "Laptop",
+      "Description": "Best Laptop",
+      "Price": "50000",
+      "Image": "https://cdn.pixabay.com/photo/2016/02/17/15/37/laptop-1205256_640.jpg"
+    }
+  
+  ]

@@ -1,0 +1,28 @@
+﻿@inject NavigationManager _Navigation
+
+<div>
+    <h1>Welcome to our shop</h1>
+    <p>Search your desired product!!</p>
+    <p>
+        <input type="text" @onkeydown="SearchItem" @bind="_searchTerm" @bind:event="oninput"
+            placeholder="Search product....."   
+        />
+    </p>
+</div>
+<a href="/search/Laptop">Search items</a>
+
+@code {
+    private string _searchTerm {get;set;}
+    
+
+    private void SearchItem(KeyboardEventArgs args ){
+        if(args.Key=="Enter"){
+            //navigating programmatically
+            _Navigation.NavigateTo($"/search/{_searchTerm}");
+
+        }
+        return;
+
+    }
+
+}

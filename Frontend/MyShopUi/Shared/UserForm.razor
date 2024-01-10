@@ -1,0 +1,50 @@
+﻿@page "/register"
+@inject NavigationManager _Navigation
+<div>
+   <EditForm Model="newuser" OnValidSubmit="Register">
+    <h2>Please Register</h2>
+    <DataAnnotationsValidator/>
+    <div>
+        <label for="name">Name</label>
+        <InputText id="name" @bind-Value="newuser.Name" aria-placeholder="Enter name"></InputText>
+        <ValidationMessage style="color:red ;" For="@(()=>newuser.Name)"></ValidationMessage>
+    </div>
+    <div>
+        <label for="email">Email Address</label>
+        <InputText id="email" @bind-Value="newuser.Email"></InputText>
+        <ValidationMessage style="color:red ;" For="@(()=>newuser.Email)"></ValidationMessage>
+    </div>
+    <div>
+        <label for="password">Password</label>
+        <InputText id="password" type="password" aria-placeholder="password" @bind-Value="newuser.Password" ></InputText>
+        <ValidationMessage style="color:red ;" For="@(()=>newuser.Password)"></ValidationMessage>
+    </div>
+    <button type="submit">Register</button>
+    <div class="regnav">
+        <span>Have an account? </span>
+        <li @onclick="GoToLogin" class="goToLogin"> Login</li>
+    </div>
+        
+   </EditForm>
+</div>
+
+@code {
+    public User user= new User();
+    public RegisterUser newuser= new RegisterUser();
+
+    
+
+    public void Register(){
+        _Navigation.NavigateTo("/products");
+        Console.WriteLine($"{newuser.Name}");
+        Console.WriteLine($"{newuser.Email}");
+        Console.WriteLine($"{newuser.Password}");
+
+    }
+
+    private void GoToLogin(){
+        _Navigation.NavigateTo("/login");
+
+    }
+
+}

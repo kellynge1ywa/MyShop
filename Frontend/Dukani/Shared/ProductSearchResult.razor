@@ -1,0 +1,49 @@
+﻿@page "/search/{searchTerm}"
+@inject HttpClient _Http;
+
+<nav>
+    <ol>
+        <li><a href="/">Home</a></li>
+        <li>Search</li>
+    </ol>
+</nav>
+@if(allproducts.Count==0){
+    <span>No product found!!</span>
+} else{
+    <h2>Result for: @searchTerm</h2>
+    <ProductFilter searchTerm="@searchTerm"></ProductFilter>
+    <div class="items">
+    @foreach(var oneprod in allproducts){
+
+      <OneProduct product="oneprod"></OneProduct>
+    }
+
+   </div>
+}
+
+@code {
+    [Parameter]
+    public string searchTerm {get;set;}
+    [Parameter, SupplyParameterFromQuery]
+    public int Price {get;set;}
+    public List<Product> allproducts= new List<Product>();
+        protected override async Task OnInitializedAsync()
+        {
+            var items= await _Http.GetFromJsonAsync<List<Product>>("SampleData/Products.json");
+            //search from either the name or description    
+            allproducts=items.Where(k=>k.Name.ToLower().Contains(searchTerm.ToLower())
+             || k.Description.ToLower().Contains(searchTerm.ToLower())).ToList();    
+            
+        }
+        protected override void OnParametersSet()
+        {
+            var results=new List<Func<Product,bool>>();
+            if(Price !=0){
+                results.Add(k => k.Price <= Price);
+            }
+            if(results.Any()){
+                allproducts=allproducts.Where(item => results.All(filter=> filter(item))).ToList();
+            }
+        }
+
+}

@@ -6,9 +6,28 @@
     <ImplicitUsings>enable</ImplicitUsings>
   </PropertyGroup>
 
+  
+
+  <ItemGroup>
+    <_ContentIncludedByDefault Remove="Shared\AddProduct.razor" />
+    <_ContentIncludedByDefault Remove="Shared\ProductSearch.razor" />
+    <_ContentIncludedByDefault Remove="Shared\ProductSearchResult.razor" />
+    <_ContentIncludedByDefault Remove="wwwroot\css\style.css" />
+  </ItemGroup>
+
   <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly" Version="7.0.14" />
     <PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly.DevServer" Version="7.0.14" PrivateAssets="all" />
   </ItemGroup>
+
+  <ItemGroup>
+    <UpToDateCheckInput Remove="Shared\ProductSearchResult.razor" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <UpToDateCheckInput Remove="Shared\AddProduct.razor" />
+  </ItemGroup>
+
+ 
 
 </Project>
