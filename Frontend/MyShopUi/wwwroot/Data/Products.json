@@ -1,17 +1,17 @@
 [
-    {
-      "Id": 1,
-      "Name": "Monitors",
-      "Description": "Best Monitor",
-      "Price": "2000",
-      "Image": "https://cdn.pixabay.com/photo/2014/12/22/19/59/macbook-577758_640.jpg"
-    },
+  {
+    "Id": 1,
+    "Name": "hp Laptop",
+    "Description": "Best Laptop",
+    "Price": "50000",
+    "Image": "https://cdn.pixabay.com/photo/2016/02/17/15/37/laptop-1205256_640.jpg"
+  },
     {
       "Id": 2,
-      "Name": "Keyboards",
-      "Description": "Best Keyboards",
-      "Price": "500",
-      "Image": "https://media.istockphoto.com/id/1396231106/photo/gaming-keyboard-with-backlight.jpg?s=1024x1024&w=is&k=20&c=nDv4zp07H7zLvsFkfQjzBbuu6C3B49cKZrXLpkQq0ds="
+      "Name": "HP laptop",
+      "Description": "Latest hp Laptop",
+      "Price": "40000",
+      "Image": "https://i.pinimg.com/236x/35/a7/1f/35a71fe347b0f3b1a1b6accbbe3ab5f6.jpg"
     },
     {
       "Id": 3,
@@ -19,6 +19,34 @@
       "Description": "Best Laptop",
       "Price": "50000",
       "Image": "https://cdn.pixabay.com/photo/2016/02/17/15/37/laptop-1205256_640.jpg"
+    },
+    {
+      "Id": 4,
+      "Name": "Macbook Laptop",
+      "Description": "Latest Macbook",
+      "Price": "200000",
+      "Image": "https://i.pinimg.com/236x/82/e2/bd/82e2bd6dca1e2dcc65fecaa3dbebed22.jpg"
+    },
+    {
+      "Id": 5,
+      "Name": "Macbook Laptop",
+      "Description": "Best Macbook",
+      "Price": "100000",
+      "Image": "https://i.pinimg.com/236x/8a/29/01/8a2901ff5b2aacab1bf74601f124d835.jpg"
+    },
+    {
+      "Id": 6,
+      "Name": "Laptop",
+      "Description": "Latest Lenovo Laptop",
+      "Price": "60000",
+      "Image": "https://i.pinimg.com/236x/22/ec/c0/22ecc017ebe47613c74e7675969138f4.jpg"
+    },
+    {
+      "Id": 7,
+      "Name": "Lenovo Laptop",
+      "Description": "Best Lenovo Laptop",
+      "Price": "54000",
+      "Image": "https://i.pinimg.com/236x/33/f9/4a/33f94a6394cae23599a67575ae21a757.jpg"
     }
   
   ]

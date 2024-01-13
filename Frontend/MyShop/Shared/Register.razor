@@ -1,0 +1,77 @@
+﻿@page "/register"
+@inject IuserAuth UserAuth
+@inject IJSRuntime IJS
+@inject NavigationManager _Navigation
+<div>
+   <EditForm Model="newuser" OnValidSubmit="RegisterUser">
+    <h2>Please Register</h2>
+    <DataAnnotationsValidator/>
+    <div>
+        <label for="name">Name</label>
+        <InputText type="text"  id="name" @bind-Value="newuser.Fullname" aria-placeholder="Enter name"></InputText>
+        <ValidationMessage style="color:red ;" For="@(()=>newuser.Fullname)"></ValidationMessage>
+    </div>
+    <div>
+        <label for="email">Email Address</label>
+        <InputText id="email" @bind-Value="newuser.Email"></InputText>
+        <ValidationMessage style="color:red ;" For="@(()=>newuser.Email)"></ValidationMessage>
+    </div>
+    <div>
+        <label for="phone">Phone Number</label>
+        <InputText id="phonenumber" type="text" aria-placeholder="phonenumber" @bind-Value="newuser.Phone" ></InputText>
+        <ValidationMessage style="color:red ;" For="@(()=>newuser.Phone)"></ValidationMessage>
+    </div>
+    <div>
+        <label for="dob">DOB</label>
+        <InputDate id="dob"  aria-placeholder="dob" @bind-Value="newuser.DOB" ></InputDate>
+        <ValidationMessage style="color:red ;" For="@(()=>newuser.DOB)"></ValidationMessage>
+    </div>
+    <div>
+        <label for="residence">Residence</label>
+        <InputText id="residence" type="text" aria-placeholder="residence" @bind-Value="newuser.Residence" ></InputText>
+        <ValidationMessage style="color:red ;" For="@(()=>newuser.Residence)"></ValidationMessage>
+    </div>
+    
+    <div>
+        <label for="password">Password</label>
+        <InputText id="password" type="password" aria-placeholder="password" @bind-Value="newuser.Password" ></InputText>
+        <ValidationMessage style="color:red ;" For="@(()=>newuser.Password)"></ValidationMessage>
+    </div>
+    <button type="submit">Register</button>
+    <div class="regnav">
+        <span>Have an account? </span>
+        <li @onclick="GoToLogin" class="goToLogin"> Login</li>
+    </div>
+        
+   </EditForm>
+</div>
+
+@code {
+    private ShopUserDto shopuser {get;set;}=new ShopUserDto();
+    private RegisterUserDto newuser= new RegisterUserDto();
+
+    public EventCallback<ShopUserDto> SignUp {get;set;}
+
+    
+
+    private async Task RegisterUser(){
+        
+        var res= await UserAuth.Register(newuser);
+        Console.WriteLine($"Name: {newuser.Fullname}");
+        if(res.Success){
+            await SignUp.InvokeAsync(shopuser);
+            _Navigation.NavigateTo("/products");
+
+        } else{
+            Console.WriteLine("registration failed!!!");
+        }
+       
+        
+    }
+
+    private void GoToLogin(){
+        _Navigation.NavigateTo("/login");
+
+    }
+
+}

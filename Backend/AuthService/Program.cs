@@ -23,6 +23,13 @@ builder.Services.AddDbContext<ShopDbContext>(options=>{
     options.UseSqlServer(builder.Configuration.GetConnectionString("myConnections"));
 });
 
+//set cors policy
+builder.Services.AddCors(options=>options.AddPolicy("policy1", build=>{
+    build.AllowAnyOrigin();
+    build.AllowAnyHeader();
+    build.AllowAnyMethod();
+}));
+
 //Adding our services
 builder.Services.AddScoped<IShopUser, ShopUserService>();
 builder.Services.AddScoped<Ijwt,JwtService>();
@@ -45,7 +52,7 @@ app.UseAuthorization();
 
 app.MapControllers();
 
-
+app.UseCors("policy1");
 
 
 

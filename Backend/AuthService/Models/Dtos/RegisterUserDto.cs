@@ -17,8 +17,7 @@ public class RegisterUserDto
     public DateTime DOB {get;set;}
     [Required]
     public string Residence {get;set;}="";
-    [Required]
-    public DateTime RegisteredDate {get;set;}
+    
     public string? Role {get;set;}="User";
 
 }

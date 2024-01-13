@@ -13,39 +13,63 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = browser
 build_property.RootNamespace = MyShop
 build_property.RootNamespace = MyShop
-build_property.ProjectDir = d:\projects\Dotnet\MyShop\Frontend\MyShop\
+build_property.ProjectDir = D:\projects\Dotnet\MyShop\Frontend\MyShop\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = false
 build_property.RazorLangVersion = 8.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = d:\projects\Dotnet\MyShop\Frontend\MyShop
+build_property.MSBuildProjectDirectory = D:\projects\Dotnet\MyShop\Frontend\MyShop
 build_property._RazorSourceGeneratorDebug = 
 
-[d:/projects/Dotnet/MyShop/Frontend/MyShop/App.razor]
+[D:/projects/Dotnet/MyShop/Frontend/MyShop/App.razor]
 build_metadata.AdditionalFiles.TargetPath = QXBwLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[d:/projects/Dotnet/MyShop/Frontend/MyShop/Pages/Counter.razor]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ291bnRlci5yYXpvcg==
-build_metadata.AdditionalFiles.CssScope = 
-
-[d:/projects/Dotnet/MyShop/Frontend/MyShop/Pages/Home.razor]
+[D:/projects/Dotnet/MyShop/Frontend/MyShop/Pages/Home.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSG9tZS5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[d:/projects/Dotnet/MyShop/Frontend/MyShop/Pages/Weather.razor]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXNcV2VhdGhlci5yYXpvcg==
+[D:/projects/Dotnet/MyShop/Frontend/MyShop/Shared/DisplayProduct.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXERpc3BsYXlQcm9kdWN0LnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[d:/projects/Dotnet/MyShop/Frontend/MyShop/_Imports.razor]
+[D:/projects/Dotnet/MyShop/Frontend/MyShop/Shared/Login.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXExvZ2luLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/projects/Dotnet/MyShop/Frontend/MyShop/Shared/OneProduct.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXE9uZVByb2R1Y3QucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/projects/Dotnet/MyShop/Frontend/MyShop/Shared/Product.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXFByb2R1Y3QucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/projects/Dotnet/MyShop/Frontend/MyShop/Shared/ProductFilter.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXFByb2R1Y3RGaWx0ZXIucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/projects/Dotnet/MyShop/Frontend/MyShop/Shared/ProductSearch.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXFByb2R1Y3RTZWFyY2gucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/projects/Dotnet/MyShop/Frontend/MyShop/Shared/Register.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXFJlZ2lzdGVyLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/projects/Dotnet/MyShop/Frontend/MyShop/Shared/SearchResults.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXFNlYXJjaFJlc3VsdHMucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/projects/Dotnet/MyShop/Frontend/MyShop/_Imports.razor]
 build_metadata.AdditionalFiles.TargetPath = X0ltcG9ydHMucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[d:/projects/Dotnet/MyShop/Frontend/MyShop/Layout/MainLayout.razor]
+[D:/projects/Dotnet/MyShop/Frontend/MyShop/Layout/MainLayout.razor]
 build_metadata.AdditionalFiles.TargetPath = TGF5b3V0XE1haW5MYXlvdXQucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = b-l1bobjj6si
 
-[d:/projects/Dotnet/MyShop/Frontend/MyShop/Layout/NavMenu.razor]
+[D:/projects/Dotnet/MyShop/Frontend/MyShop/Layout/NavMenu.razor]
 build_metadata.AdditionalFiles.TargetPath = TGF5b3V0XE5hdk1lbnUucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = b-i6gac9f2ah

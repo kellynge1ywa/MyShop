@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "xGUcCMegdGtZy6SwwHOgjLwMuZN3Er/NPF7NfzTLaI5XbNnrHvNK4XSwZGQI2NKS6T6xDihy+psbIcbbaSD0KA==",
+  "dgSpecHash": "pT1p8h26x9ZyMXW78OrHa9sWKx8LXBR+IZaIOVTBS+BT12Jp0JjiPa+lckGbNWcekij8egqQDq2EWzYitKxeEw==",
   "success": true,
   "projectFilePath": "D:\\projects\\Dotnet\\MyShop\\Backend\\MyShopMessageBus\\MyShopMessageBus.csproj",
   "expectedPackageFiles": [

@@ -26,6 +26,10 @@ build_property._RazorSourceGeneratorDebug =
 build_metadata.AdditionalFiles.TargetPath = QXBwLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
+[D:/projects/Dotnet/MyShop/Frontend/MyShopUi/Layouts/NavMenu.razor]
+build_metadata.AdditionalFiles.TargetPath = TGF5b3V0c1xOYXZNZW51LnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
 [D:/projects/Dotnet/MyShop/Frontend/MyShopUi/MainLayout.razor]
 build_metadata.AdditionalFiles.TargetPath = TWFpbkxheW91dC5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
@@ -34,16 +38,32 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW5kZXgucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/projects/Dotnet/MyShop/Frontend/MyShopUi/Pages/Show.razor]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hvdy5yYXpvcg==
-build_metadata.AdditionalFiles.CssScope = 
-
 [D:/projects/Dotnet/MyShop/Frontend/MyShopUi/Shared/LoginForm.razor]
 build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXExvZ2luRm9ybS5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
+[D:/projects/Dotnet/MyShop/Frontend/MyShopUi/Shared/OneProduct.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXE9uZVByb2R1Y3QucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/projects/Dotnet/MyShop/Frontend/MyShopUi/Shared/ProdFilter.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXFByb2RGaWx0ZXIucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/projects/Dotnet/MyShop/Frontend/MyShopUi/Shared/ProductFilter.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXFByb2R1Y3RGaWx0ZXIucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
 [D:/projects/Dotnet/MyShop/Frontend/MyShopUi/Shared/Products.razor]
 build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXFByb2R1Y3RzLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/projects/Dotnet/MyShop/Frontend/MyShopUi/Shared/ProductSearch.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXFByb2R1Y3RTZWFyY2gucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/projects/Dotnet/MyShop/Frontend/MyShopUi/Shared/SearchResults.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXFNlYXJjaFJlc3VsdHMucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
 [D:/projects/Dotnet/MyShop/Frontend/MyShopUi/Shared/UserForm.razor]

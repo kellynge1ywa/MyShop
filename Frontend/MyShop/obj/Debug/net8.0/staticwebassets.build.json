@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "bYQ1ASEGMvLqUh3Q7JsQjFz/IEl3a+xB3fSiwUyAtH4=",
+  "Hash": "z2lgpBjnnJvlGYF8g8XyVONqFgOmKsLRtHp0mC7IbVI=",
   "Source": "MyShop",
   "BasePath": "/",
   "Mode": "Root",
@@ -53,6 +53,25 @@
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "C:\\Users\\KELLY\\.nuget\\packages\\microsoft.aspnetcore.components.webassembly\\8.0.0\\build\\net8.0\\blazor.webassembly.js"
+    },
+    {
+      "Identity": "D:\\projects\\Dotnet\\MyShop\\Frontend\\MyShop\\bin\\Debug\\net8.0\\wwwroot\\_framework\\Blazored.LocalStorage.wasm",
+      "SourceId": "MyShop",
+      "SourceType": "Computed",
+      "ContentRoot": "D:\\projects\\Dotnet\\MyShop\\Frontend\\MyShop\\bin\\Debug\\net8.0\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "_framework/Blazored.LocalStorage.wasm",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "WasmResource",
+      "AssetTraitValue": "runtime",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "D:\\projects\\Dotnet\\MyShop\\Frontend\\MyShop\\obj\\Debug\\net8.0\\webcil\\Blazored.LocalStorage.wasm"
     },
     {
       "Identity": "D:\\projects\\Dotnet\\MyShop\\Frontend\\MyShop\\bin\\Debug\\net8.0\\wwwroot\\_framework\\dotnet.js",
@@ -243,6 +262,25 @@
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "D:\\projects\\Dotnet\\MyShop\\Frontend\\MyShop\\obj\\Debug\\net8.0\\webcil\\Microsoft.AspNetCore.Authorization.wasm"
+    },
+    {
+      "Identity": "D:\\projects\\Dotnet\\MyShop\\Frontend\\MyShop\\bin\\Debug\\net8.0\\wwwroot\\_framework\\Microsoft.AspNetCore.Components.Authorization.wasm",
+      "SourceId": "MyShop",
+      "SourceType": "Computed",
+      "ContentRoot": "D:\\projects\\Dotnet\\MyShop\\Frontend\\MyShop\\bin\\Debug\\net8.0\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "_framework/Microsoft.AspNetCore.Components.Authorization.wasm",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "WasmResource",
+      "AssetTraitValue": "runtime",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "D:\\projects\\Dotnet\\MyShop\\Frontend\\MyShop\\obj\\Debug\\net8.0\\webcil\\Microsoft.AspNetCore.Components.Authorization.wasm"
     },
     {
       "Identity": "D:\\projects\\Dotnet\\MyShop\\Frontend\\MyShop\\bin\\Debug\\net8.0\\wwwroot\\_framework\\Microsoft.AspNetCore.Components.Forms.wasm",
@@ -813,6 +851,25 @@
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "D:\\projects\\Dotnet\\MyShop\\Frontend\\MyShop\\obj\\Debug\\net8.0\\webcil\\netstandard.wasm"
+    },
+    {
+      "Identity": "D:\\projects\\Dotnet\\MyShop\\Frontend\\MyShop\\bin\\Debug\\net8.0\\wwwroot\\_framework\\Newtonsoft.Json.wasm",
+      "SourceId": "MyShop",
+      "SourceType": "Computed",
+      "ContentRoot": "D:\\projects\\Dotnet\\MyShop\\Frontend\\MyShop\\bin\\Debug\\net8.0\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "_framework/Newtonsoft.Json.wasm",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "WasmResource",
+      "AssetTraitValue": "runtime",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "D:\\projects\\Dotnet\\MyShop\\Frontend\\MyShop\\obj\\Debug\\net8.0\\webcil\\Newtonsoft.Json.wasm"
     },
     {
       "Identity": "D:\\projects\\Dotnet\\MyShop\\Frontend\\MyShop\\bin\\Debug\\net8.0\\wwwroot\\_framework\\System.AppContext.wasm",
@@ -5109,6 +5166,25 @@
       "OriginalItemSpec": "D:\\projects\\Dotnet\\MyShop\\Frontend\\MyShop\\bin\\Debug\\net8.0\\wwwroot\\_framework\\System.Linq.Expressions.wasm"
     },
     {
+      "Identity": "D:\\projects\\Dotnet\\MyShop\\Frontend\\MyShop\\obj\\Debug\\net8.0\\compressed\\aui0f1wwy8.gz",
+      "SourceId": "MyShop",
+      "SourceType": "Computed",
+      "ContentRoot": "D:\\projects\\Dotnet\\MyShop\\Frontend\\MyShop\\bin\\Debug\\net8.0\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "_framework/Blazored.LocalStorage.wasm.gz",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "D:\\projects\\Dotnet\\MyShop\\Frontend\\MyShop\\bin\\Debug\\net8.0\\wwwroot\\_framework\\Blazored.LocalStorage.wasm",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "D:\\projects\\Dotnet\\MyShop\\Frontend\\MyShop\\bin\\Debug\\net8.0\\wwwroot\\_framework\\Blazored.LocalStorage.wasm"
+    },
+    {
       "Identity": "D:\\projects\\Dotnet\\MyShop\\Frontend\\MyShop\\obj\\Debug\\net8.0\\compressed\\b1gvzwspmc.gz",
       "SourceId": "MyShop",
       "SourceType": "Computed",
@@ -5183,6 +5259,25 @@
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "D:\\projects\\Dotnet\\MyShop\\Frontend\\MyShop\\bin\\Debug\\net8.0\\wwwroot\\_framework\\System.Formats.Tar.wasm"
+    },
+    {
+      "Identity": "D:\\projects\\Dotnet\\MyShop\\Frontend\\MyShop\\obj\\Debug\\net8.0\\compressed\\c7a2low3i6.gz",
+      "SourceId": "MyShop",
+      "SourceType": "Computed",
+      "ContentRoot": "D:\\projects\\Dotnet\\MyShop\\Frontend\\MyShop\\bin\\Debug\\net8.0\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "_framework/Microsoft.AspNetCore.Components.Authorization.wasm.gz",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "D:\\projects\\Dotnet\\MyShop\\Frontend\\MyShop\\bin\\Debug\\net8.0\\wwwroot\\_framework\\Microsoft.AspNetCore.Components.Authorization.wasm",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "D:\\projects\\Dotnet\\MyShop\\Frontend\\MyShop\\bin\\Debug\\net8.0\\wwwroot\\_framework\\Microsoft.AspNetCore.Components.Authorization.wasm"
     },
     {
       "Identity": "D:\\projects\\Dotnet\\MyShop\\Frontend\\MyShop\\obj\\Debug\\net8.0\\compressed\\cgwz7yuy24.gz",
@@ -7598,6 +7693,25 @@
       "OriginalItemSpec": "D:\\projects\\Dotnet\\MyShop\\Frontend\\MyShop\\bin\\Debug\\net8.0\\wwwroot\\_framework\\System.Diagnostics.Process.wasm"
     },
     {
+      "Identity": "D:\\projects\\Dotnet\\MyShop\\Frontend\\MyShop\\obj\\Debug\\net8.0\\compressed\\xzwqk6rezc.gz",
+      "SourceId": "MyShop",
+      "SourceType": "Computed",
+      "ContentRoot": "D:\\projects\\Dotnet\\MyShop\\Frontend\\MyShop\\bin\\Debug\\net8.0\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "_framework/Newtonsoft.Json.wasm.gz",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "D:\\projects\\Dotnet\\MyShop\\Frontend\\MyShop\\bin\\Debug\\net8.0\\wwwroot\\_framework\\Newtonsoft.Json.wasm",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "D:\\projects\\Dotnet\\MyShop\\Frontend\\MyShop\\bin\\Debug\\net8.0\\wwwroot\\_framework\\Newtonsoft.Json.wasm"
+    },
+    {
       "Identity": "D:\\projects\\Dotnet\\MyShop\\Frontend\\MyShop\\obj\\Debug\\net8.0\\compressed\\yd91awsozl.gz",
       "SourceId": "MyShop",
       "SourceType": "Computed",
@@ -7864,6 +7978,25 @@
       "OriginalItemSpec": "wwwroot\\css\\bootstrap\\bootstrap.min.css.map"
     },
     {
+      "Identity": "D:\\projects\\Dotnet\\MyShop\\Frontend\\MyShop\\wwwroot\\css\\styles.css",
+      "SourceId": "MyShop",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\projects\\Dotnet\\MyShop\\Frontend\\MyShop\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "css/styles.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\styles.css"
+    },
+    {
       "Identity": "D:\\projects\\Dotnet\\MyShop\\Frontend\\MyShop\\wwwroot\\favicon.png",
       "SourceId": "MyShop",
       "SourceType": "Discovered",
@@ -7921,12 +8054,12 @@
       "OriginalItemSpec": "wwwroot\\index.html"
     },
     {
-      "Identity": "D:\\projects\\Dotnet\\MyShop\\Frontend\\MyShop\\wwwroot\\sample-data\\weather.json",
+      "Identity": "D:\\projects\\Dotnet\\MyShop\\Frontend\\MyShop\\wwwroot\\sample-data\\Products.json",
       "SourceId": "MyShop",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\projects\\Dotnet\\MyShop\\Frontend\\MyShop\\wwwroot\\",
       "BasePath": "/",
-      "RelativePath": "sample-data/weather.json",
+      "RelativePath": "sample-data/Products.json",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -7937,7 +8070,26 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\sample-data\\weather.json"
+      "OriginalItemSpec": "wwwroot\\sample-data\\Products.json"
+    },
+    {
+      "Identity": "D:\\projects\\Dotnet\\MyShop\\Frontend\\MyShop\\wwwroot\\sample-data\\Users.json",
+      "SourceId": "MyShop",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\projects\\Dotnet\\MyShop\\Frontend\\MyShop\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "sample-data/Users.json",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\sample-data\\Users.json"
     }
   ]
 }

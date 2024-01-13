@@ -1,6 +1,6 @@
 ﻿using System.ComponentModel.DataAnnotations;
 
-namespace MyShop;
+namespace MyShop.Models;
 
 public class RegisterUser
 {
@@ -9,6 +9,9 @@ public class RegisterUser
     [Required]
     [EmailAddress]
     public string Email {get;set;}="";
+    [Required]
+    
+    public string Phone {get;set;}="";
     [Required]
     public string Password {get;set;}="";
 

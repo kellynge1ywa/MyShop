@@ -1,4 +1,5 @@
 ﻿@page "/login"
+@inject HttpClient _Http
 @inject NavigationManager _Navigation
 <div>
    <EditForm Model="login" OnValidSubmit="LoginUser">
@@ -25,9 +26,35 @@
 </div> 
 
 @code {
+    public List<User> users= new List<User>();
     public LoginUser login =new LoginUser();
 
+    public void clear(){
+        login=new LoginUser();
+    }
+    
+    protected override async Task OnInitializedAsync()
+    {
+        var allusers=await  _Http.GetFromJsonAsync<List<User>>("Data/Users.json");
+        if(allusers.Any()){
+            users=allusers;
+
+        }    
+    }
+
     public void LoginUser(){
+        var userEmail= users.Find(user=>user.Email==login.Email);
+        if(userEmail==null){
+            Console.WriteLine("Invalid email!!");
+            return;
+            
+        }
+        var userPassword= users.Find(users => users.Password==login.Password);
+        if(userPassword==null){
+            Console.WriteLine("Invalid password");
+            return;
+        }
+        Console.WriteLine($"Hello {login.Email} you've logged in successfully!!");
         _Navigation.NavigateTo("/products");
 
     }

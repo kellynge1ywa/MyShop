@@ -1,0 +1,80 @@
+﻿@page "/login"
+@inject HttpClient _Http
+@inject IuserAuth UserAuth
+@inject ILocalStorageService localstorage
+@inject AuthenticationStateProvider stateProvider
+@inject NavigationManager _Navigation
+<div>
+   <EditForm Model="login" OnValidSubmit="LoginUser">
+    <h2>Please login</h2>
+    <DataAnnotationsValidator/>
+    
+    <div>
+        <label for="email">Email Address</label>
+        <InputText id="email" @bind-Value="login.Email"></InputText>
+        <ValidationMessage style="color:red ;" For="@(()=>login.Email)"></ValidationMessage>
+    </div>
+    <div>
+        <label for="password">Password</label>
+        <InputText id="password" type="password" aria-placeholder="password" @bind-Value="login.Password" ></InputText>
+        <ValidationMessage style="color:red ;" For="@(()=>login.Password)"></ValidationMessage>
+    </div>
+    <button type="submit">Login</button>
+    <div class="regNav">
+        <span>Don't have an account? </span> <li @onclick="GoToRegister" class="goToRegister">Create account</li>
+
+    </div>
+   </EditForm>
+
+</div> 
+
+@code {
+    public List<User> users= new List<User>();
+    private LoginRequestDto login =new LoginRequestDto();
+
+    public void clear(){
+        login=new LoginRequestDto();
+    }
+    
+    protected override async Task OnInitializedAsync()
+    {
+        var allusers=await  _Http.GetFromJsonAsync<List<User>>("sample-data/Users.json");
+        if(allusers.Any()){
+            users=allusers;
+
+        }    
+    }
+    private async Task LoginUser(){
+        var response=await UserAuth.Login(login);
+        Console.WriteLine(response.Token);
+        if(!string.IsNullOrWhiteSpace(response.Token)){
+            await localstorage.SetItemAsStringAsync("AuthToken",response.Token);
+            await stateProvider.GetAuthenticationStateAsync();
+            _Navigation.NavigateTo("/products");
+
+
+        }
+    }
+
+    @* private async Task LoginUser(){
+        var userEmail= users.Find(user=>user.Email==login.Email);
+        if(userEmail==null){
+            Console.WriteLine("Invalid email!!");
+            return;
+            
+        }
+        var userPassword= users.Find(users => users.Password==login.Password);
+        if(userPassword==null){
+            Console.WriteLine("Invalid password");
+            return;
+        }
+        Console.WriteLine($"Hello {login.Email} you've logged in successfully!!");
+        _Navigation.NavigateTo("/products");
+
+    } *@
+
+    private void GoToRegister(){
+        _Navigation.NavigateTo("/register");
+    }
+
+}

@@ -25,6 +25,10 @@
       "PackagePath": "staticwebassets\\css\\bootstrap\\bootstrap.min.css.map"
     },
     {
+      "Id": "D:\\projects\\Dotnet\\MyShop\\Frontend\\MyShop\\wwwroot\\css\\styles.css",
+      "PackagePath": "staticwebassets\\css\\styles.css"
+    },
+    {
       "Id": "D:\\projects\\Dotnet\\MyShop\\Frontend\\MyShop\\wwwroot\\favicon.png",
       "PackagePath": "staticwebassets\\favicon.png"
     },
@@ -37,8 +41,12 @@
       "PackagePath": "staticwebassets\\index.html"
     },
     {
-      "Id": "D:\\projects\\Dotnet\\MyShop\\Frontend\\MyShop\\wwwroot\\sample-data\\weather.json",
-      "PackagePath": "staticwebassets\\sample-data\\weather.json"
+      "Id": "D:\\projects\\Dotnet\\MyShop\\Frontend\\MyShop\\wwwroot\\sample-data\\Products.json",
+      "PackagePath": "staticwebassets\\sample-data\\Products.json"
+    },
+    {
+      "Id": "D:\\projects\\Dotnet\\MyShop\\Frontend\\MyShop\\wwwroot\\sample-data\\Users.json",
+      "PackagePath": "staticwebassets\\sample-data\\Users.json"
     },
     {
       "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.MyShop.Microsoft.AspNetCore.StaticWebAssets.props",

@@ -1,7 +1,7 @@
 {
   "entryAssembly": "MyShopUi",
   "resources": {
-    "hash": "sha256-L5Y9IKcWjXnGSFiGIsH5O3XtbGeIiKPm+dJISX50JIE=",
+    "hash": "sha256-fKL48tShUXnAIDGe6oBCGziG/muGx/B4FXz9um6+ZzM=",
     "runtime": {
       "dotnet.7.0.14.cc25u4weux.js": "sha256-YWGUknGRzP/fgO6YjvCJKPVQNZAPEd6ll+rHfQEIW+I=",
       "dotnet.timezones.blat": "sha256-t5xviiOQTfAsF0UDhmcyalKiaehUmf/sqJl97tmPM0M=",
@@ -202,10 +202,10 @@
       "mscorlib.dll": "sha256-YcsJInaT/kw3Vrm+SESegPxvT/Lr9RE6rE/KnxWIIc0=",
       "netstandard.dll": "sha256-TztlSRjADgiEABbiAMdWZpHrUVd8wnRtQRAvlwmRP/4=",
       "System.Private.CoreLib.dll": "sha256-BAhrZ8Zg3cJKQipxdzqQo+9jtPkOkRx1ou3oIhDohtk=",
-      "MyShopUi.dll": "sha256-l364ggDEWeXdnr1LxfW/eSN9MwyohThuwbmjR0sjR5A="
+      "MyShopUi.dll": "sha256-ylmQsHnJsS27EkdyTBksfJF7a4ViWJ/HEwv5rSeYLe4="
     },
     "pdb": {
-      "MyShopUi.pdb": "sha256-i9ukno9iDf5foGTQfhBHiU1FTW4H6tE0Vfuoq94nmDE="
+      "MyShopUi.pdb": "sha256-RQ1ECmP5C5VgzqIi9TT3V8p3mZ1IgvkKgsmFBstr2C0="
     },
     "runtimeAssets": {
       "dotnet.wasm": {

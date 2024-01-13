@@ -1,12 +1,14 @@
 {
   "version": 2,
-  "dgSpecHash": "+15BeX6jh2gcm221rEfzdsWcRlOQYSSeLTxDikcoCIOwXJVoAJS6BeqXHQUZ3JDOwTsyA+TXUsV/O2fh61trwg==",
+  "dgSpecHash": "G7ijZFue0jcA21upKNFuWU5iRpqIF9kMjWzd2dXrvKx0jDNZfVW/XYmVKFH3i4kuixRu2+6iHILqbteWBf5P+Q==",
   "success": true,
   "projectFilePath": "D:\\projects\\Dotnet\\MyShop\\Frontend\\MyShopUi\\MyShopUi.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\KELLY\\.nuget\\packages\\blazored.localstorage\\4.4.0\\blazored.localstorage.4.4.0.nupkg.sha512",
     "C:\\Users\\KELLY\\.nuget\\packages\\microsoft.aspnetcore.authorization\\7.0.14\\microsoft.aspnetcore.authorization.7.0.14.nupkg.sha512",
     "C:\\Users\\KELLY\\.nuget\\packages\\microsoft.aspnetcore.components\\7.0.14\\microsoft.aspnetcore.components.7.0.14.nupkg.sha512",
     "C:\\Users\\KELLY\\.nuget\\packages\\microsoft.aspnetcore.components.analyzers\\7.0.14\\microsoft.aspnetcore.components.analyzers.7.0.14.nupkg.sha512",
+    "C:\\Users\\KELLY\\.nuget\\packages\\microsoft.aspnetcore.components.authorization\\7.0.11\\microsoft.aspnetcore.components.authorization.7.0.11.nupkg.sha512",
     "C:\\Users\\KELLY\\.nuget\\packages\\microsoft.aspnetcore.components.forms\\7.0.14\\microsoft.aspnetcore.components.forms.7.0.14.nupkg.sha512",
     "C:\\Users\\KELLY\\.nuget\\packages\\microsoft.aspnetcore.components.web\\7.0.14\\microsoft.aspnetcore.components.web.7.0.14.nupkg.sha512",
     "C:\\Users\\KELLY\\.nuget\\packages\\microsoft.aspnetcore.components.webassembly\\7.0.14\\microsoft.aspnetcore.components.webassembly.7.0.14.nupkg.sha512",
@@ -30,11 +32,12 @@
     "C:\\Users\\KELLY\\.nuget\\packages\\microsoft.jsinterop.webassembly\\7.0.14\\microsoft.jsinterop.webassembly.7.0.14.nupkg.sha512",
     "C:\\Users\\KELLY\\.nuget\\packages\\microsoft.net.illink.analyzers\\7.0.100-1.23211.1\\microsoft.net.illink.analyzers.7.0.100-1.23211.1.nupkg.sha512",
     "C:\\Users\\KELLY\\.nuget\\packages\\microsoft.net.illink.tasks\\7.0.100-1.23211.1\\microsoft.net.illink.tasks.7.0.100-1.23211.1.nupkg.sha512",
-    "C:\\Users\\KELLY\\.nuget\\packages\\microsoft.net.sdk.webassembly.pack\\8.0.0\\microsoft.net.sdk.webassembly.pack.8.0.0.nupkg.sha512",
+    "C:\\Users\\KELLY\\.nuget\\packages\\microsoft.net.sdk.webassembly.pack\\8.0.1\\microsoft.net.sdk.webassembly.pack.8.0.1.nupkg.sha512",
+    "C:\\Users\\KELLY\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512",
     "C:\\Users\\KELLY\\.nuget\\packages\\system.io.pipelines\\7.0.0\\system.io.pipelines.7.0.0.nupkg.sha512",
     "C:\\Users\\KELLY\\.nuget\\packages\\system.text.encodings.web\\7.0.0\\system.text.encodings.web.7.0.0.nupkg.sha512",
     "C:\\Users\\KELLY\\.nuget\\packages\\system.text.json\\7.0.0\\system.text.json.7.0.0.nupkg.sha512",
-    "C:\\Users\\KELLY\\.nuget\\packages\\microsoft.netcore.app.runtime.mono.browser-wasm\\7.0.14\\microsoft.netcore.app.runtime.mono.browser-wasm.7.0.14.nupkg.sha512"
+    "C:\\Users\\KELLY\\.nuget\\packages\\microsoft.netcore.app.runtime.mono.browser-wasm\\7.0.15\\microsoft.netcore.app.runtime.mono.browser-wasm.7.0.15.nupkg.sha512"
   ],
   "logs": []
 }

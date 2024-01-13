@@ -1,0 +1,16 @@
+﻿<div  class="item">
+    <div class="product">
+        <img style="height: 10rem;" class="image" src="@oneproduct.Image" alt="">
+        <div>
+            <p>@oneproduct.Name</p>
+            <p>@oneproduct.Description</p>
+            <p>@oneproduct.Price</p>
+        </div>
+    </div>
+</div>
+
+@code {
+    [Parameter]
+    public Product oneproduct {get;set;}=default!;
+
+}

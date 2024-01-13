@@ -1,0 +1,30 @@
+﻿@page "/products"
+@inject NavigationManager _Navigation
+@inject HttpClient _Http
+<div>
+    <ProductSearch></ProductSearch>
+    <div class="container">
+
+        @foreach (var item in products)
+        {
+            <OneProduct oneproduct="item"></OneProduct>
+        }
+
+
+    </div>
+</div>
+
+@code {
+    public List<ProductModel> products = new List<ProductModel>();
+
+    protected override async Task OnInitializedAsync()
+    {
+        var allproducts = await _Http.GetFromJsonAsync<List<ProductModel>>("sample-data/Products.json");
+        if (allproducts.Any())
+        {
+            products = allproducts;
+        }
+
+    }
+
+}

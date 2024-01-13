@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Dukani")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+a7369feb3e071a267c8d799a87e7832451d3374b")]
 [assembly: System.Reflection.AssemblyProductAttribute("Dukani")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Dukani")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

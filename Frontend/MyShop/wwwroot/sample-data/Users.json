@@ -1,0 +1,26 @@
+[
+    {
+        "Id": 1,
+        "Name": "Kelly Ngeiywa",
+        "Email": "kellyngeiywa@gmail.com",
+        "PhoneNumber":"888855555",
+        "Password": "Kelly@2024"
+        
+    },
+    {
+        "Id": 2,
+        "Name": "Kelvin Ngeiywa",
+        "Email": "kelvinngeiywa@gmail.com",
+        "PhoneNumber":"888855555",
+        "Password": "Ngeiywa@2024"
+        
+    },
+    {
+        "Id": 1,
+        "Name": "Kelly Ngeiywa",
+        "Email": "korirngeiywa@gmail.com",
+        "PhoneNumber":"888855555",
+        "Password": "Korir@2024"
+        
+    }
+]
